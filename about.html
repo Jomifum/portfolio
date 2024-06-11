@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .navbar-item {
+            flex: 1;
+        }
+
+        .navbar-link {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar-link:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #about {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .about-content {
+            background: #ffd200;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .dropdown-container {
+            margin: 20px 0;
+        }
+
+        .dropdown {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="index.html" class="navbar-link">Home</a></li>
+            <li class="navbar-item"><a href="about.html" class="navbar-link">About</a></li>
+            <li class="navbar-item"><a href="contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <div class="about-content">
+            Recent Computer Systems graduate seeking an entry-level position as a Full Stack Developer, Data Analyst, 
+            Database Administrator, or Software Developer. Eager to apply knowledge and skills acquired through 
+            education and certificates.
+        </div>
+
+        <h2>Education</h2>
+        <form>
+            <input type="radio" id="BT" name="degree" value="BT">
+            <label for="BT">Bachelor of Technology in Computer Systems at New York City College of Technology</label><br>
+            <input type="radio" id="AAS" name="degree" value="AAS">
+            <label for="AAS">Associate of Applied Science in Programming and Software Development at LAGCC</label><br>
+        </form>
+
+        <h2>My Skills</h2>
+        <table>
+            <tr>
+                <th>S. No</th>
+                <th>Language</th>
+                <th>Mostly Used for</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>HTML</td>
+                <td>FrontEnd</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>CSS</td>
+                <td>FrontEnd</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Python</td>
+                <td>BackEnd</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>React</td>
+                <td>FrontEnd</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>SQL</td>
+                <td>BackEnd</td>
+            </tr>
+        </table>
+        <p>Note: Other languages can be added because of the learning process.</p>
+        
+        <div class="dropdown-container">
+            <label for="dropdown">Certificates:</label>
+            <select id="dropdown" class="dropdown">
+                <option value="option1">Google Data Analytics by Google on Coursera</option>
+                <option value="option2">Introduction to Cybersecurity CYB101 by CodePath</option>
+                <option value="option3">Introduction to Web Development WEB101, CodePath</option>
+                <option value="option4">Google Cybersecurity Specialization by Google on Coursera</option>
+                <option value="option5">Information Security Basics, Texas A&M</option>
+            </select>
+        </div>
+    </section>
+</body>
+</html>
